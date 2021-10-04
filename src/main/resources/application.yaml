@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: meio-comunicacao-service
+  jms:
+    servicebus:
+      connection-string: "Endpoint=sb://asbteste.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9YL8Ot1bAZaIv7b55JzQa6UxurzlinzGI4z1ZjbH5fo="
+      idle-timeout: 1800000
+      pricing-tier: "Standard"
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: thierrysouza2007@gmail.com
+    password: Signet@01
+
+    properties:
+      mail:
+        debug: false
+        smtp:
+          ssl:
+            trust: "*"
+          auth: false
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+server:
+  port: 6061
